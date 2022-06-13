@@ -11,10 +11,13 @@ let result = [];
 let i = 0;
 let len = arr.length;
 
-for (; i < len; i+=2) {
+while(i < len) {
     let value = Object.values(arr[i])[0];
     result.push(value);
+    i+=2;
 }
+
+
 
 //export result
 module.exports = result; 
